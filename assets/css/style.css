@@ -1,0 +1,460 @@
+/* scroll-behavior for nav bar*/
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* variables for main colours of the website and for colour and size of the portfolio gridarea's border */
+:root {
+  --color1: #30333C;
+  --color2: #89C0C2;
+  --color3: #445877;
+  --gridareaborder: solid 4px #89C0C2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  color: var(--color1);
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 22px;
+  color: var(--color1);
+}
+
+h4 {
+  font-size: 18px;
+}
+
+header {
+  display: flex;
+  background-color: var(--color1);
+  padding: 20px;
+  justify-content: space-between;
+  padding-left: 0;
+  padding-right: 80px;
+}
+
+.lefttitle, .navright {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.navright{
+  width: 400px;
+  justify-content: space-around;
+}
+
+.lefttitle {
+background-color: var(--color2);
+padding: 20px;
+width: 300px;
+justify-content: flex-end;
+}
+
+a {
+  padding: 5px;
+  text-decoration: none;
+  margin: 5px;
+  padding-bottom: 0;
+  font-size: 20px;
+}
+
+.navright a {
+color: var(--color2);
+border-bottom: solid 4px var(--color2);
+}
+
+/* hover pseudo-class for all links in the page */
+a:hover {
+  color: var(--color2);
+  background-color: rgba(63, 81, 104, 0.5);
+}
+
+.heroimage {
+  height: 170px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: linear-gradient(rgba(68, 88, 119, 0.5), rgba(61, 113, 192, 0.5)), url("../images/02-hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  /* position: relative; */
+}
+
+/* "Web Developer" style and position*/
+.subtitle {
+  position: relative;
+  width: 250px;
+  top: 60%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  color: var(--color1);
+  background-color: var(--color2);
+  padding: 10px;
+  text-align: center;
+}
+
+/* colour for all the h2 in the page-section (about me, work, contact) */
+.page-section h2 {
+  color: var(--color3);
+}
+
+section {
+  font-size: 18px;
+}
+
+article {
+  font-size: 18px;
+}
+
+/* Grid for about section */
+#about {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-areas: 
+  "aboutmeside aboutmetext";
+  padding: 30px 100px 30px 40px;
+  height: 280px;
+}
+
+#aboutmeside {
+  grid-area: aboutmeside;
+}
+
+/* Style for the sides sections */
+#aboutmeside, #workside, #contactmeside {
+  display: flex;
+  border-right: solid 4px var(--color3);
+  padding: 0 20px 0 20px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#aboutmetext {
+  grid-area: aboutmetext;
+  color: var(--color3);
+  display: flex;
+  padding-left: 40px;
+  text-align: justify;
+  /* text-justify: inter-word; */
+  align-items: center;
+}
+
+#profileimg {
+  height: 200px;
+  width: auto;
+  float: left;
+  padding: 30px;
+  border-radius: 50px;
+}
+
+/* Grid for work section */
+#work {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-areas: 
+  "workside worklinks";
+  padding: 30px 100px 30px 40px;
+  height: 800px;
+}
+
+#workside {
+  grid-area: workside;
+}
+
+/* Grid for the portfolio worklinks section */
+#worklinks {
+  grid-area: worklinks;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50% 25% 25%;
+  grid-template-areas: 
+  "portfolio1 portfolio1"
+  "portfolio2 portfolio3"
+  "portfolio4 portfolio5";
+  padding-left: 40px;
+}
+
+#portfolio1 {
+  grid-area: portfolio1;
+  background-image: url("../images/digital-marketing-meeting.jpg");
+  border: var(--gridareaborder);
+}
+
+#portfolio2 {
+  grid-area: portfolio2;
+  background-image: url("../images/02-portfolio-2.jpg");
+  border: var(--gridareaborder);
+}
+
+#portfolio3 {
+  grid-area: portfolio3;
+  background-image: url("../images/02-portfolio-3.jpg");
+  border: var(--gridareaborder);
+}
+
+#portfolio4 {
+  grid-area: portfolio4;
+  background-image: url("../images/02-portfolio-4.jpg");
+  border: var(--gridareaborder);
+}
+
+#portfolio5 {
+  grid-area: portfolio5;
+  background-image: url("../images/02-run-buddy.jpg");
+  border: var(--gridareaborder);
+}
+
+/* Padding 0 to eliminate the space between the heading and the border of the a links */
+#worklinks a {
+  padding: 0;
+}
+
+/* Grid for protfolioGridArea section, style of what is inside the worklinks */
+.portfolioGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: grid;
+  align-content: center;
+  border: var(--color2);
+}
+
+/* hover pseudo-class on the images of the worklinks section */
+.portfolioGridArea:hover {
+  opacity: 0.7;
+}
+
+/* style of the heading (names of projects in the worklinks section */
+.heading {
+  display: flex;
+  background-color: var(--color2);
+  color: var(--color1);
+  justify-content: flex-start;
+  align-items: center;
+  width: 320px;
+  height: 100px;
+  padding: 10px 0 10px 20px;
+}
+
+/* Grid for the contact section */
+#contact {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-areas: 
+  "contactmeside contactmelinks";
+  padding: 30px 100px 50px 40px;
+  height: 220px;
+}
+
+#contactmeside {
+  grid-area: contactmeside;
+}
+
+/* style for the contact me links at the end of page */
+#contactmelinks {
+  grid-area: contactmelinks;
+  display: flex;
+  padding-left: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#contactmelinks a {
+  color: var(--color3);
+  border-bottom: solid 4px var(--color3);
+}
+
+/* footer with message and copywright */
+footer {
+  background-color: var(--color1);
+  color: var(--color2);
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* Media query for a screen of max-width 600px, new rules applied*/
+@media only screen and (max-width: 600px) {
+
+  * {
+  margin: 0 auto;
+  box-sizing: none;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  
+  h3 {
+    font-size: 15px;
+  }
+
+  h4 {
+    font-size: 10px;
+  }
+
+  nav a {
+    display: none;
+  }
+
+  nav a:last-child {
+    display: contents;
+  }
+
+  .subtitle {
+    position: relative;
+    width: 160px;
+    top: 60%;
+    left: 68%;
+  }
+
+  section {
+    font-size: 14px;
+  }
+  
+  article {
+    font-size: 14px;
+  }
+
+  #about {
+    display: grid;
+    grid-template-rows: 80px 440px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "aboutmeside"
+    "aboutmetext";
+    height: 520px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  #aboutmeside, #workside, #contactmeside {
+    display: flex;
+    border-right: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #aboutmetext {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: flex-start;
+    width: 300px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  #profileimg {
+    height: 200px;
+    width: auto;
+    float: left;
+    padding: 30px;
+    border-radius: 50px;
+  }
+  
+  #work {
+    display: grid;
+    grid-template-rows: 8% 85%;
+    grid-template-columns: 1fr;    grid-template-areas: 
+    "workside" "worklinks";
+    padding: 0px;
+    height: 855px;
+    margin: 0 auto;
+  }
+  
+  #worklinks {
+    grid-area: worklinks;
+    display: grid;
+    width: 300px;
+    height: 950px;
+    grid-template-rows: 15% 15% 15% 15% 15%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "portfolio1"
+    "portfolio2" "portfolio3"
+    "portfolio4" "portfolio5";
+    padding: 0;
+    margin: 0 auto;
+    }
+  
+  #worklinks a {
+    padding: 0;
+  }
+  
+  .heading {
+    display: flex;
+    background-color: var(--color2);
+    color: var(--color1);
+    justify-content: center;
+    align-items: center;
+    width: 205px;
+    height: 55px;
+    padding: 0px;
+  }
+  
+  #contact {
+    display: grid;
+    grid-template-rows: 15% 85%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "contactmeside" "contactmelinks";
+    height: 350px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  #contactmelinks {
+    grid-area: contactmelinks;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* height: 400px; */
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  #contactmelinks a {
+    font-size: 14px;
+    padding: 0;
+    margin: 15px;
+  }
+  
+  footer {
+    padding: 15px;
+    font-size: 9px;
+  }
+}
