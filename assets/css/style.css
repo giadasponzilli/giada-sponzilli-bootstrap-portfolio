@@ -4,6 +4,22 @@
   scroll-behavior: smooth;
 }
 
+/* .portfolioBackground {
+  background-image: url(../images/giadasponzilli.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+
+
+
+
+
+
+
 /* variables for main colours of the website and for colour and size of the portfolio gridarea's border */
 :root {
   --color1: #30333C;
