@@ -131,7 +131,7 @@ article {
 }
 
 /* Style for the sides sections */
-.aboutmeside, .workside, .contactmeside {
+.aboutmeside, .workside, .skillsSide, .contactmeside {
   display: flex;
   border-right: solid 4px var(--color3);
   padding: 0 20px 0 20px;
@@ -139,7 +139,7 @@ article {
   align-items: center;
 }
 
-.aboutmetext, .workCards, .contactmelinks {
+.aboutmetext, .workCards, .skillList, .contactmelinks {
 padding-left: 40px;
 }
 
@@ -185,6 +185,20 @@ padding-left: 40px;
 
 .skills li {
   margin: 1rem;
+}
+
+.skills {
+  display: flex;
+  padding: 30px 100px 50px 40px;
+  /* height: 300px; */
+}
+
+.skillList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #445877;
+  font-weight: 600;
 }
 
 /* contact section */
