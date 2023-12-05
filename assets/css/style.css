@@ -164,7 +164,7 @@ article {
   border-right: solid 4px var(--color3);
   padding: 0 20px 0 20px;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .aboutmetext, .workCards, .skillList, .contactmelinks {

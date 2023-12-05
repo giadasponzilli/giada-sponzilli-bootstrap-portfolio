@@ -4,13 +4,12 @@
 
 This portfolio wants to showcase my skills as a web developer to future employers.
 In this application, I rebuilt my previous portfolio using Bootstrap 5.
-The webiste is a skeleton for my future projects. Currently, I have only two coding projects.
+The website is a skeleton for my future projects. Currently, I have only two coding projects.
 The resume button is linked to a google doc.
 At the bottom of the page there is a section with my contacts to make it easier for employers who wish to reach out for possible interviews.
 The website has been made using bootrstrap 5, flexboxes, variables and pseudo-classes.
 
-
-The code is deployed at 
+The code is deployed at https://giadasponzilli.github.io/giada-sponzilli-bootstrap-portfolio/
 
 ## Screenshots
 
@@ -32,5 +31,7 @@ N/A
 MIT License
 
 ## Badges
+
+![Static Badge](https://img.shields.io/badge/60%25-blue?label=HTML&labelColor=green&color=blue) ![Static Badge](https://img.shields.io/badge/40%25-blue?label=CSS&labelColor=yellow&color=blue)
 
 
