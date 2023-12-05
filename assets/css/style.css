@@ -72,12 +72,12 @@ h4 {
 }
 
 .customHeader {
-  color: #89C0C2;
+  color: var(--color2);
   font-size: 28px;
 } 
 
 .customHeader:hover {
-  color: #89C0C2;
+  color: var(--color2);
 }
 
 .nav-item a {
@@ -96,8 +96,8 @@ a:hover {
 }
 
 .navbar-toggler {
-  color: #89C0C2 !important;
-  background-color: #89C0C2 !important;
+  color: var(--color2) !important;
+  background-color: var(--color2) !important;
 }
 
 /* hero jumbotron */
@@ -112,12 +112,6 @@ a:hover {
   padding: 0 !important;
 }
 
-/* .customJumbo {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-} */
-
 .profilePic {
   z-index: 10;
   border-radius: 50px;
@@ -126,9 +120,9 @@ a:hover {
 }
 
 .jumboText{
-color: #89C0C2;
-text-shadow: 1px 1px #3B5998;
-font-weight: 600;
+  color: var(--color2);
+  text-shadow: 1px 1px #3B5998;
+  font-weight: 600;
 }
 
 .jumboText p {
@@ -136,7 +130,7 @@ font-weight: 600;
 }
 
 .jumboButton {
-  background-color: #89C0C2;
+  background-color: var(--color2);
   border: #445877;
 }
 
@@ -210,17 +204,18 @@ padding-left: 40px;
   }
 
 .card {
-    border: solid 4px #89C0C2;
-    background-color: #89C0C2;
+    border: solid 4px var(--color2);
+    background-color: var(--color2);
   }
 
 .customButton {
-    background-color: #445877;
-    border: #445877;
+    background-color: var(--color3);
+    border: var(--color3);
   }
 
 .skills li {
-  margin: 1rem;
+  margin: 3px;
+  list-style-type: circle;
 }
 
 .skills {
@@ -233,7 +228,7 @@ padding-left: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #445877;
+  color: var(--color3);
   font-weight: 600;
 }
 
