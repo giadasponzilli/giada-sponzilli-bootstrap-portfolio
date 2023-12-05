@@ -13,6 +13,10 @@ The code is deployed at https://giadasponzilli.github.io/giada-sponzilli-bootstr
 
 ## Screenshots
 
+![Alt text](assets/images/screencapture-giadasponzilli-github-io-giada-sponzilli-bootstrap-portfolio-2023-12-05-18_24_46.png)
+
+![Alt text](assets/images/screencapture-giadasponzilli-github-io-giada-sponzilli-bootstrap-portfolio-2023-12-05-18_36_51.png)
+
 ## Installation
 
 N/A
