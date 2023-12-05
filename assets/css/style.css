@@ -49,6 +49,7 @@ h4 {
   font-size: 18px;
 }
 
+/* nav bar style*/
 .customNav {
   position: fixed;
   width: 100%;
@@ -81,12 +82,12 @@ h4 {
 }
 
 .nav-item a {
-color: var(--color2) !important;
-border-bottom: solid 4px var(--color2);
-padding: 5px 5px 0 5px;
-text-decoration: none;
-margin: 5px;
-font-size: 20px;
+  color: var(--color2) !important;
+  border-bottom: solid 4px var(--color2);
+  padding: 5px 5px 0 5px;
+  text-decoration: none;
+  margin: 5px;
+  font-size: 20px;
 }
 
 /* hover pseudo-class for all links in the page */
@@ -131,19 +132,16 @@ a:hover {
 
 .jumboButton {
   background-color: var(--color2);
-  border: #445877;
+  border: var(--color3);
 }
 
+
+/* main section syle */
 
 /* colour for all the h2 and h3 in the main container (about me, work, contact) */
 .mainContainer h2, .mainContainer h3 {
   color: var(--color3);
   font-weight: 800;
-}
-
-.card p {
-  color: var(--color3);
-  font-weight: 550
 }
 
 section {
@@ -154,13 +152,13 @@ article {
   font-size: 18px;
 }
 
-/* About section */
+/* about section */
 .about {
   padding: 30px 100px 50px 40px;
   height: 280px;
 }
 
-/* Style for the sides sections */
+/* style for the sides sections */
 .aboutmeside, .workside, .skillsSide, .contactmeside {
   display: flex;
   border-right: solid 4px var(--color3);
@@ -170,7 +168,7 @@ article {
 }
 
 .aboutmetext, .workCards, .skillList, .contactmelinks {
-padding-left: 40px;
+  padding-left: 40px;
 }
 
 .aboutmetext {
@@ -189,29 +187,34 @@ padding-left: 40px;
 
 .cardContainer {
   padding: 5px;
-  }
+}
 
-  .card img {
-    max-height: 230px;
-    width: auto;
-    object-fit: cover;
-  }
+.card p {
+  color: var(--color3);
+  font-weight: 550
+}
 
-  .mainWorkImg {
-    max-height: 330px !important;
-    width: auto;
-    object-fit: cover;
-  }
+.card img {
+  max-height: 230px;
+  width: auto;
+  object-fit: cover;
+}
+
+.mainWorkImg {
+  max-height: 330px !important;
+  width: auto;
+  object-fit: cover;
+}
 
 .card {
-    border: solid 4px var(--color2);
-    background-color: var(--color2);
-  }
+  border: solid 4px var(--color2);
+  background-color: var(--color2);
+}
 
 .customButton {
-    background-color: var(--color3);
-    border: var(--color3);
-  }
+  background-color: var(--color3);
+  border: var(--color3);
+}
 
 .skills li {
   margin: 3px;
@@ -250,12 +253,13 @@ padding-left: 40px;
 
 .contactmelinks a {
   color: var(--color3);
-  border-bottom: solid 4px var(--color3);
+  border-bottom: solid 3px var(--color3);
   text-decoration: none;
   padding: 4px;
+  border-radius: 20px;
 }
 
-/* footer with message and copywright */
+/* footer with icons, message and copywright */
 footer {
   background-color: var(--color1);
   color: var(--color2);
@@ -278,16 +282,6 @@ footer {
 .customIcon:visited {
   color: var(--color2);
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
