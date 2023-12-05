@@ -4,17 +4,6 @@
   scroll-behavior: smooth;
 }
 
-/* .portfolioBackground {
-  background-image: url(../images/giadasponzilli.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-
-
 /* variables for main colours of the website and for colour and size of the portfolio gridarea's border */
 :root {
   --color1: #30333C;
@@ -73,6 +62,7 @@ h4 {
   align-items: center;
   padding-left: 50px;
   padding-right: 80px;
+  height: 80px;
 }
 
 .navBar {
@@ -104,6 +94,52 @@ a:hover {
   color: var(--color2);
   background-color: rgba(63, 81, 104, 0.5);
 }
+
+.navbar-toggler {
+  color: #89C0C2 !important;
+  background-color: #89C0C2 !important;
+}
+
+/* hero jumbotron */
+.portfolioBackground {
+  background-image: linear-gradient(rgba(68, 88, 119, 0.5), rgba(61, 113, 192, 0.5)), url(../images/02-hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 400px;
+  padding: 0 !important;
+}
+
+/* .customJumbo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+} */
+
+.profilePic {
+  z-index: 10;
+  border-radius: 50px;
+  height: 180px;
+  width: auto;
+}
+
+.jumboText{
+color: #89C0C2;
+text-shadow: 1px 1px #3B5998;
+font-weight: 600;
+}
+
+.jumboText p {
+  font-weight: 600;
+}
+
+.jumboButton {
+  background-color: #89C0C2;
+  border: #445877;
+}
+
 
 /* colour for all the h2 and h3 in the main container (about me, work, contact) */
 .mainContainer h2, .mainContainer h3 {
