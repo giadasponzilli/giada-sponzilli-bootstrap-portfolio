@@ -215,7 +215,7 @@ article {
 
 .skillList {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   color: var(--color3);
   font-weight: 600;
@@ -318,6 +318,10 @@ footer {
     padding-right: 50px;
   }
 
+  .jumboText a {
+    display: none;
+  }
+
   section {
     font-size: 16px;
   }
@@ -350,8 +354,8 @@ footer {
   }
   
   .contact {
-    height: 320px;
-    padding: 20px 0 30px 0;
+    height: 460px;
+    padding: 80px 0 30px 0;
     margin: 0 auto;
   }
 
