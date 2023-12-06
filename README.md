@@ -28,6 +28,8 @@ This application can be used by employers to take a look at my skills and projec
 
 ## Credits
 
+I used Font Awesome for social icons https://fontawesome.com/
+
 N/A
 
 ## License
